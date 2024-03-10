@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href=""
+      rel="stylesheet"
+    />
+    <title>FORM CLASS</title>
+  </head>
+  <body>
+    <h1>NEW STUDENT REGISTRATION</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <fieldset>
+            <legend> Gender:</legend>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Address</legend>
+
+            <textarea id="address" name="address" rows="10" cols="30" placeholder="Enter your full address" required></textarea>
+
+
+        </fieldset><br>
+
+        
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="Enter your phone number" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      
+        
+
+        <fieldset>
+            <legend>Courses</legend>
+
+            <label for="java">Java</label>
+            <input type="checkbox" id="java" name="course" value="java"><br>
+            
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="course" value="python"><br>
+            
+            <label for="c#">C#</label>
+            <input type="checkbox" id="c#" name="course" value="c#"><br>
+            
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="javascript" name="course" value="javascript"><br>
+            
+            <label for="nodejs">NodeJS</label>
+            <input type="checkbox" id="nodejs" name="course" value="nodejs"><br>
+            
+            <label for="nextjs">NextJS</label>
+            <input type="checkbox" id="nextjs" name="course" value="nextjs"><br>
+            
+            <label for="expressjs">ExpressJS</label>
+            <input type="checkbox" id="expressjs" name="course" value="expressjs"><br>
+            
+        </fieldset><br>
+
+        <label for="course">Courses</label>
+        <select id="course" name="course">
+            <option value="choose">Select your choice</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+            <option value="javascript">JavaScript</option>
+            <option value="nodejs">NodeJS</option>
+            <option value="nextjs">NextJS</option>
+            <option value="expressjs">ExpressJS</option>
+            
+        </select><br><br>
+
+        <button type="submit">Register</button>
+        <button type="cancel">Cancel</button>
+
+
+
+
+
+    </form>
+  </body>
+</html>
